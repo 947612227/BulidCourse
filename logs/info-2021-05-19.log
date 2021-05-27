@@ -1,0 +1,10 @@
+[2021-05-19 17:52:46,339] [views.py:276] [views:subSH] [INFO]- 提交审核完成
+[2021-05-19 17:52:47,022] [views.py:295] [views:shCourse] [INFO]- 提交审核完成
+[2021-05-19 17:52:47,982] [views.py:324] [views:fenBan] [INFO]- 分班完成
+[2021-05-19 17:52:49,460] [views.py:348] [views:addStuden] [INFO]- 添加学员成功:
+[2021-05-19 17:52:49,461] [views.py:614] [views:buildCourse] [INFO]- {'msg': '成功', 'courseName': '宝箱课后评价规则调整03', 'courseId': 126810, '主讲ID': 330, '辅导时间': 5, '第一讲开课时间': '2021-05-19 17:53:26', '第一讲结课时间': '2021-05-19 17:59:26', 'liveRoomType': '3', 'classTypeIds': '127563', 'diyLessonId': 1127746822, 'code': 0}
+[2021-05-19 17:59:37,516] [views.py:276] [views:subSH] [INFO]- 提交审核完成
+[2021-05-19 17:59:38,596] [views.py:295] [views:shCourse] [INFO]- 提交审核完成
+[2021-05-19 17:59:39,881] [views.py:324] [views:fenBan] [INFO]- 分班完成
+[2021-05-19 17:59:40,907] [views.py:348] [views:addStuden] [INFO]- 添加学员成功:
+[2021-05-19 17:59:40,907] [views.py:614] [views:buildCourse] [INFO]- {'msg': '成功', 'courseName': '【测试】张佳0001', 'courseId': 126811, '主讲ID': 330, '辅导时间': 5, '第一讲开课时间': '2021-05-19 17:59:04', '第一讲结课时间': '2021-05-19 18:05:04', 'liveRoomType': '3', 'classTypeIds': '127563', 'diyLessonId': 1127450048, 'code': 0}

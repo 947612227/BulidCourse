@@ -1,0 +1,97 @@
+[2021-05-19 17:38:26,069] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:38:27,715] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET / HTTP/1.1" 200 1898
+[2021-05-19 17:38:27,759] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap-theme.css HTTP/1.1" 200 26132
+[2021-05-19 17:38:27,760] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.css HTTP/1.1" 200 146010
+[2021-05-19 17:38:27,766] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.js HTTP/1.1" 200 69707
+[2021-05-19 17:38:57,279] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3253
+[2021-05-19 17:40:35,517] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3293
+[2021-05-19 17:41:08,268] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3335
+[2021-05-19 17:41:29,606] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3341
+[2021-05-19 17:41:37,632] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /addPage/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 591, in buildCourse
+    courseId = getCourseId(request,courseName)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 242, in getCourseId
+    courseId = js['data']['courseList'][0]['id']
+IndexError: list index out of range
+[2021-05-19 17:41:37,633] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /addPage/ HTTP/1.1" 500 86459
+[2021-05-19 17:43:52,493] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:43:52,868] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:43:54,142] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:43:54,516] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:44:00,875] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:44:01,258] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:44:07,425] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /addPage/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 592, in buildCourse
+    courseId = getCourseId(request,courseName)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 243, in getCourseId
+    courseId = js['data']['courseList'][0]['id']
+IndexError: list index out of range
+[2021-05-19 17:44:07,426] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /addPage/ HTTP/1.1" 500 86383
+[2021-05-19 17:49:09,541] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:49:09,899] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:49:20,922] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /addPage/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 593, in buildCourse
+    courseId = getCourseId(request,courseName)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 244, in getCourseId
+    courseId = js['data']['courseList'][0]['id']
+IndexError: list index out of range
+[2021-05-19 17:49:20,923] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /addPage/ HTTP/1.1" 500 86643
+[2021-05-19 17:50:55,940] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:50:56,348] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:51:08,096] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /addPage/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 593, in buildCourse
+    courseId = getCourseId(request,courseName)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 236, in getCourseId
+    url = httphost + "lol/classes/course/list?requestType=1&name=" + couroseName
+NameError: name 'couroseName' is not defined
+[2021-05-19 17:51:08,096] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /addPage/ HTTP/1.1" 500 85789
+[2021-05-19 17:51:26,246] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:51:26,608] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:51:44,463] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /addPage/
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 593, in buildCourse
+    courseId = getCourseId(request,courseName)
+  File "/Users/admin/Documents/code/Python/django/createCourse/login/views.py", line 244, in getCourseId
+    courseId = js['data']['courseList'][0]['id']
+IndexError: list index out of range
+[2021-05-19 17:51:44,463] [basehttp.py:157] [basehttp:log_message] [ERROR]- "POST /addPage/ HTTP/1.1" 500 86643
+[2021-05-19 17:52:46,339] [views.py:276] [views:subSH] [INFO]- 提交审核完成
+[2021-05-19 17:52:47,022] [views.py:295] [views:shCourse] [INFO]- 提交审核完成
+[2021-05-19 17:52:47,982] [views.py:324] [views:fenBan] [INFO]- 分班完成
+[2021-05-19 17:52:49,460] [views.py:348] [views:addStuden] [INFO]- 添加学员成功:
+[2021-05-19 17:52:49,461] [views.py:614] [views:buildCourse] [INFO]- {'msg': '成功', 'courseName': '宝箱课后评价规则调整03', 'courseId': 126810, '主讲ID': 330, '辅导时间': 5, '第一讲开课时间': '2021-05-19 17:53:26', '第一讲结课时间': '2021-05-19 17:59:26', 'liveRoomType': '3', 'classTypeIds': '127563', 'diyLessonId': 1127746822, 'code': 0}
+[2021-05-19 17:52:49,461] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /addPage/ HTTP/1.1" 200 400
+[2021-05-19 17:57:04,180] [autoreload.py:240] [autoreload:trigger_reload] [INFO]- /Users/admin/Documents/code/Python/django/createCourse/login/views.py changed, reloading.
+[2021-05-19 17:57:04,568] [autoreload.py:617] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2021-05-19 17:59:08,622] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3358
+[2021-05-19 17:59:31,236] [basehttp.py:157] [basehttp:log_message] [INFO]- "GET /addCoursePage/ HTTP/1.1" 200 3358
+[2021-05-19 17:59:37,516] [views.py:276] [views:subSH] [INFO]- 提交审核完成
+[2021-05-19 17:59:38,596] [views.py:295] [views:shCourse] [INFO]- 提交审核完成
+[2021-05-19 17:59:39,881] [views.py:324] [views:fenBan] [INFO]- 分班完成
+[2021-05-19 17:59:40,907] [views.py:348] [views:addStuden] [INFO]- 添加学员成功:
+[2021-05-19 17:59:40,907] [views.py:614] [views:buildCourse] [INFO]- {'msg': '成功', 'courseName': '【测试】张佳0001', 'courseId': 126811, '主讲ID': 330, '辅导时间': 5, '第一讲开课时间': '2021-05-19 17:59:04', '第一讲结课时间': '2021-05-19 18:05:04', 'liveRoomType': '3', 'classTypeIds': '127563', 'diyLessonId': 1127450048, 'code': 0}
+[2021-05-19 17:59:40,908] [basehttp.py:157] [basehttp:log_message] [INFO]- "POST /addPage/ HTTP/1.1" 200 378

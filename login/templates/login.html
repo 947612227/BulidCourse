@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:400,700'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<div class="container">
+  <div class="info">
+    <h1>Login System</h1>
+  </div>
+</div>
+<div class="form">
+  <div class="thumbnail"><img src="/static/css/hat.svg"/></div>
+  <form class="login-form" method="post" action="/login/">
+      {% csrf_token %}
+        <input type="text" name="username" placeholder="请输入账号/用户名">
+        <input type="password" name="password" placeholder="请输入密码" >
+        <button type="submit">登录</button>
+        <a href="/index/">返回首页</a>
+      {% if message %}
+            <p class="message">{{ message }}? <a href="/register/">去注册</a></p>
+      {% endif %}
+
+  </form>
+</div>
+  <script src='/static/js/jquery.min.js'></script>
+    <script  src="/static/js/index.js"></script>
+
+{#{% block content %}#}
+{##}
+{#    <div class="container">#}
+{#        <div style="margin: 0 auto; width: 50%">#}
+{#            <h1 style="margin-left:35%">登录页</h1>#}
+{#            <form action="/login/" method="post">#}
+{#                {% csrf_token %}#}
+{#                <div class="form-group">#}
+{#                    <label>账号/用户名：</label>#}
+{#                    <input type="text" name="username" placeholder="请输入账号/用户名" class="form-control">#}
+{#                </div>#}
+{#                <div class="form-group">#}
+{#                    <label>密码：</label>#}
+{#                    <input type="password" name="password" placeholder="请输入密码" class="form-control">#}
+{#                </div>#}
+{#                <button type="submit" class="btn-default form-control">登录</button>#}            
+{#            </form>#}
+{#                <!--错误信息-->#}
+{#            <div name = "message" style="color: rgb(0, 255, 76);margin-left:35%">#}
+{#                {% if message %}#}
+{#                    {{ message }}#}
+{#                    <a href="/register/">去注册</a>#}
+{#                {% endif %}#}
+{#            </div>#}
+{#        </div>#}
+{##}
+{#    </div>#}
+
+
+{#{% endblock %}#}

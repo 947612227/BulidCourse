@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="form">
+        <form class="addCourse-form" method="post" action="/addPage/">
+          <table>
+            <tr>
+              <td>课程名称：</td><td><input id="kcmc" type="text" name="courseName" value="【测试】张佳0001"></td>
+              
+              <td>主讲ID：</td><td><input id="zjid" type="text" name="teacherId" value="330" ></td>
+              <td>课程类型：</td><td><input id="kclx" type="text" value="2" name="_type" ></td>
+              <!-- list="typelist" -->
+              <!-- <datalist id="typelist">
+                <option>1学期同步课</option>
+                <option>2导流课</option>
+              </datalist> -->
+              <td>直播间类型：</td><td><input id="zbjlx" type="text" value=3 name="liveRoomType"  ></td> 
+              <!-- value="1三分;2半身;3小组" -->
+              <!-- list="typelist1" -->
+              <!-- <datalist id="typelist1">
+                <option>1三分屏</option>
+                <option>2半身直播</option>
+                <option>2小组课</option>
+              </datalist> -->
+              <td>班型ID：</td><td><input id="bxid" type="text" name="classTypeIds" value="127563" ></td>
+              <td>讲次ID：</td><td><input id="jcid" type="text" name="diyLessonId" value="1127450048" ></td>
+              <td><button type="submit">创建课程</button></td>
+                  <!-- <p class="message">{{ message }} -->
+            </tr>
+          </table>          
+        </form>
+        <body>
+        </body>
+      </div>
+      说明：</br>
+      1、课程名称      如果重复可能会报错，尽量别重复.已知名称不能包含+号</br>
+      2、主讲ID       写错的话课就在别人名下了</br>
+      3、课程类型      1:学期同步;2导流课;3:爆品课;4:公开课</br>
+      4、直播间类型    1:三分屏;2:半身直播;3:小组课</br>
+      5、班型ID       classTypeIds 默认 127563 lol那个课</br>
+      6、讲次ID       diyLessonId 默认 1127746822</br>
+
+
+      <!-- <p><font size="5" face="arial" color="red">1、课程名称 </font></p></br>
+      <p><font size="5" face="arial" color="red">如果重复可能会报错，尽量别重复.</font></p></br>
+      <p><font size="5" face="arial" color="red">2、主讲ID</font></p></br>
+      <p><font size="5" face="arial" color="red">写错的话课就在别人名下了</font></p></br>
+      <p><font size="5" face="arial" color="red">3、课程类型</font></p></br>
+      <p><font size="5" face="arial" color="red">1:学期同步;2导流课;3:爆品课;4:公开课</font></p></br>
+      <p><font size="5" face="arial" color="red">4、直播间类型</font></p></br>
+      <p><font size="5" face="arial" color="red">1:三分屏;2:半身直播;3:小组课</font></p></br>
+      <p><font size="5" face="arial" color="red">5、班型ID</font></p></br>
+      <p><font size="5" face="arial" color="red">classTypeIds 默认 127563 lol那个课</font></p></br>
+      <p><font size="5" face="arial" color="red">6、讲次ID  diyLessonId 默认 1127746822</font></p></br> -->
+      <!-- <p><font size="5" face="arial" color="red">diyLessonId 默认 1127746822</font></p></br> -->
+        <!-- <script src='/static/js/jquery.min.js'></script>
+          <script  src="/static/js/index.js"></script> -->
+      
+</html>

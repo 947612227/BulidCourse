@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %} 首页 {% endblock %}
+{% block content %}
+    <nav class="navbar">
+        <div class="container">
+            <ul class="nav nav-pills">
+                <li><a href="/home/">首页</a></li>
+                <li><a href="#">企业介绍</a></li>
+                <li><a href="#">解决方案</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">购买设备</a></li>
+                <li class="float-right"><a href="/login/">登录</a></li>
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="搜索">
+                    </div>
+                    <button type="submit" class="btn btn-default">搜索</button>
+                </form>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>文件列表</h1>
+        <ul>
+            <li><a href="http://localhost/music">听歌放松</a></li>
+            <li><a href="http://localhost/file">文件管理</a></li>
+            <li><a href="http://localhost/file/mac">MAC软件</a></li>
+            <li><a href="http://localhost/file/win">Win软件</a></li>
+            <li><a href="http://localhost/file/app">APP列表</a></li>
+            <!-- <li><a href="/create/add/">线上创建课程</a></li> -->
+            <li><a href="/addCoursePage/">线上创建课程</a></li>
+            <li><a href="http://localhost/">返回</a></li>
+            {% if request.session.is_login %}
+                <li>亲爱的{{ request.session.username }}，欢迎您</li>
+                 <li>
+                    <a href="">我的</a>
+                    <a href="/logout/">退出</a>
+                </li>
+            {% else %}
+                <a href="/login/">去登录</a>
+                <a href="/register/">去注册</a>
+            {% endif %}
+        </ul>
+    </div>
+{% endblock %}
