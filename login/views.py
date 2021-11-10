@@ -13,6 +13,8 @@ import datetime
 # Create your views here.
 import hashlib
 import logging
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 
 logger = logging.getLogger('log')
 
@@ -129,7 +131,7 @@ def _hash_password(password):
 # # 相当于 'select * from login_user where name=%s and password=%s' %s(username, password)
 # result = models.User.objects.filter(name=username, password=password).first()
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+
 x = ''.join(str(random.choice(range(4)))for _ in range(4))
 # 虽然课程名称采用4位数随机数，但是依然可能出现重复的课程名称导致建课失败，换个名字前缀即可，名字前缀是由前端穿过来的，当然你也可以把4改成8或者更多
 """必填参数"""
@@ -205,7 +207,7 @@ def getToken(request):
     return header\n
     """
     header = {'Content-Type': 'application/json', 'lol-code': 'LOL_CLASSES'}
-    data = {"password": "NcRyVcBoHQ155czPvi+Ivim4o9SXhFqewgGh1nUQmXelp/jdhY0g+8ohbSuz9s6OwTWGbHP7rdicYKHc2BV46jWO3ntXNeaMP7SPOqQOFQPQp/pbcNPp2NJPFrxqSmUuZU4zUjt3/QdqHmSHGTpO47/PX6TuLBkkFimkpW4IBrk=", "rememberMe": "false",
+    data = {"password": "xxxx", "rememberMe": "false",
             "type": "oa", 
             "username": "jNExVlKC1/mYQrg48PsXtS63Sb/BC5CDApySb3HoUkX7PpNeYsPSdLEZFFv+FeS/nHiUdSqKLgIhAOcT4RvvsN+ah9sPqgSw/xO2gtax0YCYt8hAVROCVIiVKuvMjzzcFybMSLAi526xTXKkxwFsmi2VMKEC1+9DDf9VLSf245s="}
     data = json.dumps(data)
